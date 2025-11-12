@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Food Delivery</title>
+  <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+  <div class="navbar">
+    <h1>Food Delivery 🍔</h1>
+    <div>
+      <a href="/login/">Login</a>
+      <a href="/signup/">Sign Up</a>
+    </div>
+  </div>
+
+  <div class="home-container">
+    <h2>Delicious food, delivered fast!</h2>
+  </div>
+
+  <div class="menu-container">
+    <div class="food-card">
+      <img src="https://source.unsplash.com/200x150/?burger" alt="Burger">
+      <h3>Cheese Burger</h3>
+      <p>₹80</p>
+      <button>Order Now</button>
+    </div>
+
+    <div class="food-card">
+      <img src="https://source.unsplash.com/200x150/?pizza" alt="Pizza">
+      <h3>Margherita Pizza</h3>
+      <p>₹250</p>
+      <button>Order Now</button>
+    </div>
+
+    <div class="food-card">
+      <img src="https://source.unsplash.com/200x150/?pasta" alt="Pasta">
+      <h3>White Sauce Pasta</h3>
+      <p>₹180</p>
+      <button>Order Now</button>
+    </div>
+
+    <div class="food-card">
+      <img src="https://source.unsplash.com/200x150/?sandwich" alt="Sandwich">
+      <h3>Veg Sandwich</h3>
+      <p>₹90</p>
+      <button>Order Now</button>
+    </div>
+
+    <div class="food-card">
+      <img src="https://source.unsplash.com/200x150/?biryani" alt="Biryani">
+      <h3>Hyderabadi Biryani</h3>
+      <p>₹200</p>
+      <button>Order Now</button>
+    </div>
+
+    <div class="food-card">
+      <img src="https://source.unsplash.com/200x150/?icecream" alt="Ice Cream">
+      <h3>Chocolate Ice Cream</h3>
+      <p>₹80</p>
+      <button>Order Now</button>
+    </div>
+  </div>
+</body>
+</html>
