@@ -1,11 +1,12 @@
 /* --- General Page Style --- */
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #fff8f0;
 }
 
-/* --- Navbar --- */
 .navbar {
   background-color: #fc8019;
   color: white;
@@ -28,7 +29,6 @@ body {
   font-weight: bold;
 }
 
-/* --- Home Page --- */
 .home-container {
   text-align: center;
   margin-top: 80px;
@@ -53,9 +53,9 @@ body {
   background-color: #e56c12;
 }
 
-/* --- Forms (Login / Signup) --- */
-.form-container {
-  width: 300px;
+.form-container,
+.admin-container {
+  width: 350px;
   margin: 100px auto;
   background: #fff;
   padding: 25px;
@@ -63,7 +63,8 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.form-container h2 {
+.form-container h2,
+.admin-container h2 {
   text-align: center;
   color: #333;
 }
@@ -90,7 +91,7 @@ button {
 button:hover {
   background-color: #e56c12;
 }
-/* --- Menu Section --- */
+
 .menu-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -130,3 +131,66 @@ button:hover {
   color: #777;
   font-size: 14px;
 }
+
+.admin-links a {
+  display: block;
+  background: #fc8019;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.admin-links a:hover {
+  background: #e56c12;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.admin-table th {
+  background-color: #fc8019;
+  color: white;
+}
+
+.delete-btn {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.delete-btn:hover {
+  text-decoration: underline;
+}
+
+
+.back-link {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #fc8019;
+  font-weight: bold;
+}
+
+
+.food-card img {
+  display: block !important;
+  width: 100% !important;
+  height: 150px !important;
+  object-fit: cover !important;
+  background-color: #eee;
+}
+

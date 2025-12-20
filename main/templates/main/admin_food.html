@@ -1,0 +1,27 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/style.css' %}">
+
+<div class="admin-container">
+  <h2>Food Items</h2>
+
+  <a href="/add-food/" class="back-link">➕ Add Food</a>
+
+  <table class="admin-table">
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Action</th>
+    </tr>
+    {% for f in foods %}
+    <tr>
+      <td>{{ f.name }}</td>
+      <td>₹{{ f.price }}</td>
+      <td>
+        <a href="/delete-food/{{ f.id }}/" class="delete-btn">Delete</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <a href="/admin-dashboard/" class="back-link">⬅ Back</a>
+</div>

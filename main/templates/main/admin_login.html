@@ -1,0 +1,13 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/style.css' %}">
+
+<div class="admin-container">
+  <h2>Admin Login</h2>
+
+  <form method="post" class="admin-form">
+    {% csrf_token %}
+    <input type="email" name="email" placeholder="Admin Email">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Login</button>
+  </form>
+</div>

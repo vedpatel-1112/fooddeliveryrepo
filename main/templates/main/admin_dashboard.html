@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+
+<div class="admin-container">
+    <h2>Admin Dashboard</h2>
+
+    <div class="admin-links">
+        <a href="/admin-users/">Manage Users</a>
+        <a href="/admin-food/">Manage Food Items</a>
+        <a href="/add-food/">Add New Food</a>
+        <a href="/admin-orders/">View Orders</a>
+
+    </div>
+
+    <a href="/" class="back-link">⬅ Back to Home</a>
+</div>
+
+</body>
+</html>

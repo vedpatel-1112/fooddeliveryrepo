@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/style.css' %}">
+
+<div class="admin-container">
+  <h2>Add Food Item</h2>
+
+  <form method="post" class="admin-form">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Food Name">
+    <input type="number" name="price" placeholder="Price">
+    <button type="submit">Add Food</button>
+  </form>
+
+  <a href="/admin-food/" class="back-link">⬅ Back</a>
+</div>
